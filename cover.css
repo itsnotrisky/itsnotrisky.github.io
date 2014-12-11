@@ -6,7 +6,8 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  text-decoration: none;
+  color: #cf0;
 }
 
 /* Custom default button */
@@ -28,9 +29,11 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  position: relative;
 }
 body {
-  color: #fff;
+  /*color: #fff;*/
+  color: rgba(255,255,255,.75);
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -110,7 +113,7 @@ body {
  */
 
 .cover {
-  padding: 0 20px;
+  padding: 140px 20px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -137,6 +140,8 @@ body {
   .masthead {
     position: fixed;
     top: 0;
+
+    background-color: #333;
   }
   .mastfoot {
     position: fixed;
