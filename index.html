@@ -13,8 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/icomoon/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -27,7 +30,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#my-nav">
 
     <div class="site-wrapper">
 
@@ -38,23 +41,140 @@
           <div class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">amca</h3>
-              <nav>
+              <div id="my-nav">
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">About</a></li>
-                  <li><a href="#">Network</a></li>
-                  <li><a href="#">Find me</a></li>
+                  <li class="active"><a href="#about">About</a></li>
+                  <li><a href="#network">Network</a></li>
+                  <li><a href="#find">Find me</a></li>
                 </ul>
-              </nav>
+              </div>
             </div>
           </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">G'day m8!</h1>
-            <p class="lead">A little part of world wide web. Trying to learn anything around and understand it.
-              Find out more about amca and spare more time to take a look at the network.</p>
-            <p class="lead">Pronounce as 'amja', it means uncle. It's Turkish. The "e" does nothing.</p>
+          <div id="about" class="inner cover">
+            <h1 class="cover-heading">Hi,</h1>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              On behalf of Rizky Noor Ichwan, welcome to his landing page.<br />
+              Live in the world of software development, he is a technology anthusiast, <abbr title="You got a cool song?">music addictive</abbr>, and a less-tolerant on <abbr title="Many thanks!">spicy foods</a>.
+            </p>
+            <p class="lead">
+              If you bother what is <strong>eamca</strong><small>*</small>, it comes from <strong>amca</strong>.<br />
+              A Turkish word means <strong>uncle</strong>.
+            </p>
+            <p>
+              <small>* The <strong>e</strong> does nothing as the exact domain name already taken.</small>
+            </p>
+          </div>
+
+          <div id="network" class="inner cover">
+            <h1 class="cover-heading">Network</h1>
+              <dl>
+                <dt>
+                  Happy typing octopus
+                  <a href="http://blog.eamca.com" target="_blank">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                  </a>
+                </dt>
+                <dd>
+                  <span class="label label-default">octopress</span>
+                </dd>
+                <dt>
+                  amca on Wordpress
+                  <a href="http://babibu.eamca.com" target="_blank">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                  </a>
+                </dt>
+                <dd>
+                  <span class="label label-default">Wordpress</span>
+                </dd>
+                <dt>
+                  gist-it server
+                  <a href="http://gist-it.eamca.com" target="_blank">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                  </a>
+                </dt>
+                <dd>
+                  <span class="label label-default">gist-it</span>
+                </dd>
+                <dt>
+                  Cari Kos Online
+                  <a href="http://carikos.eamca.com" target="_blank">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                  </a>
+                </dt>
+                <dd>
+                  <span class="label label-default">CodeIgniter</span>
+                  <span class="label label-default">MySQL</span>
+                  <span class="label label-default">jQuery</span>
+                </dd>
+                <dt>
+                  Database TC 2009
+                  <a href="http://tc.eamca.com" target="_blank">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                  </a>
+                </dt>
+                <dd>
+                  <span class="label label-default">CodeIgniter</span>
+                  <span class="label label-default">MySQL</span>
+                  <span class="label label-default">jQuery</span>
+                </dd>
+                <dt>
+                  Endeavour in The World
+                  <a href="http://endeavour.eamca.com" target="_blank">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                  </a>
+                </dt>
+                <dd>
+                  <span class="label label-default">PHP</span>
+                  <span class="label label-default">MySQL</span>
+                  <span class="label label-default">jQuery</span>
+                </dd>
+                <dt>
+                  CLICK
+                  <a href="http://click.eamca.com" target="_blank">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                  </a>
+                </dt>
+                <dd>
+                  <span class="label label-default">PHP</span>
+                  <span class="label label-default">MySQL</span>
+                </dd>
+              </dl>
+          </div>
+
+          <div id="find" class="inner cover">
+            <h1 class="cover-heading">Find me</h1>
+            <p class="lead">
+              <span class="icon-home"></span>
+              Semarang, Indonesia
+            </p>
+            <p class="lead">
+              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+              Melbourne, Australia
+            </p>
+            <p class="lead">
+              <span class="icon-mail"></span>
+              <a href="mailto:hi@eamca.com?subject=Hi fella" target="_blank">
+                hi [at] eamca [dot] com 
+              </a>
+            </p>
+            <p class="lead">
+              <span class="icon-linkedin"></span>
+              <a href="http://linkedin.eamca.com" target="_blank">
+                LinkedIn
+              </a>
+            </p>
+            <p class="lead">
+              <span class="icon-github"></span>
+              <a href="http://github.eamca.com" target="_blank">
+                GitHub
+              </a>
+            </p>
+            <p class="lead">
+              <span class="icon-play"></span>
+              <a href="http://youtube.eamca.com" target="_blank">
+                Youtube
+              </a>
             </p>
           </div>
 
@@ -75,8 +195,28 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    $(function() {
+      $("#my-nav ul li a[href^='#']").on('click', function(e) {
+
+         // prevent default anchor click behavior
+         e.preventDefault();
+
+         // store hash
+         var hash = this.hash;
+
+         // animate
+         $('html, body').animate({
+             scrollTop: $(this.hash).offset().top
+           }, 300, function(){
+
+             // when done, add hash to url
+             // (default click behaviour)
+             window.location.hash = hash;
+           });
+
+      });
+    });
+    </script>
   </body>
 </html>
