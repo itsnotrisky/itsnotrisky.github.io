@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  web:
+    image: nginx:otel
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "-H", "'X-Eamca-Healthcheck: true'", "http://localhost"]
+      interval: 1m
+      start_period: 3s
+      timeout: 30s
+      retries: 3
+    volumes:
+      - /root/projects/docker-php/nginx/${STACK_NAME}.conf:/etc/nginx/nginx.conf:ro
+      - /root/projects/$STACK_NAME:/usr/share/nginx/html:ro
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+      - traefik.http.routers.$STACK_NAME.rule=Host(`eamca.com`)
+      - traefik.http.routers.$STACK_NAME.entrypoints=http
+    networks:
+      - traefik
+      - eamcacom
+
+networks:
+  traefik:
+    external: true
+  eamcacom:
+    external: true
