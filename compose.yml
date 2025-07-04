@@ -12,7 +12,9 @@ services:
       retries: 3
     volumes:
       - /root/projects/docker-php/nginx/${STACK_NAME}.conf:/etc/nginx/nginx.conf:ro
-      - /root/projects/$STACK_NAME:/usr/share/nginx/html:ro
+      - /root/projects/$STACK_NAME/css:/usr/share/nginx/html/css:ro
+      - /root/projects/$STACK_NAME/js:/usr/share/nginx/html/js:ro
+      - /root/projects/$STACK_NAME/index.html:/usr/share/nginx/html/index.html:ro
     labels:
       - traefik.enable=true
       - traefik.http.routers.$STACK_NAME.rule=Host(`eamca.com`)
